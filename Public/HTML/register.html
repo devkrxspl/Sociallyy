@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../CSS/register.css">
+    <title> Sociallyy - Login </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!--<div class="title-div">
+      <p id="title"> Sociallyy </p>
+    </div>-->
+
+    <div id="register-form" class="unloaded">
+      
+      <h1 id="title"> Create Your Account </h1>
+      <h1 id="loading"> Working on it... </h1>
+      <h1 id="subtitle"> We just need... </h1>
+      <div id="register-form-container">
+        
+
+        <input id="user" placeholder="Username">
+        <input id="pass" type="password" placeholder="Password"></input>
+        <input id="conf-pass" type="password" placeholder="Confirm Password"></input>
+        <button id="register-button" onclick="register()">REGISTER</button>
+        <div id="login-signup-divider"><p> Already Have an Account? <a id="login-button" href="https://Sociallyy.devkrxspl.repl.co/login">LOG IN</a></p></div>
+      </div>
+      <div id="register-errors">
+        <div id="error-template" class="error template">
+          <h1 class="error-message"></h1>
+        </div>
+      </div>
+    </div>
+    
+    <div id="menu-bar">
+
+      <script>
+        window.onload = function() {
+          $("#register-form").addClass("loaded");
+          $("#register-form").removeClass("unloaded");
+        };
+      </script> 
+
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="../JS/util.js"></script>
+      <script src="../JS/register.js"></script>
+      
+  </body>
+</html>

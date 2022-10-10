@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <title> Sociallyy - Login </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!--<div class="title-div">
+      <p id="title"> Sociallyy </p>
+    </div>-->
+
+    <div id="login-form" class="unloaded">
+      
+      <h1 id="title"> Welcome back! </h1>
+      <h1 id="loading"> Working on it... </h1>
+      <h1 id="subtitle"> Enjoying the view? </h1>
+      <div id="login-form-container">
+        
+
+        <input id="user" placeholder="Username">
+        <input id="pass" type="password" placeholder="Password"><a id="show-password" onclick="showPassword()">SHOW</a></input>
+        <button id="login-button" onclick="login()">LOGIN</button>
+        <div id="login-signup-divider"><p> NEW? <a id="register-button" href="https://Sociallyy.devkrxspl.repl.co/register">SIGN UP</a></p></div>
+        <!--<button id="signup-button">SIGN UP</button>-->
+      </div>
+      <div id="login-errors">
+        <div id="error-template" class="error template">
+          <h1 class="error-message"> E </h1>
+        </div>
+      </div>
+    </div>
+
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="../JS/util.js"></script>
+      <script src="../JS/login.js"></script>
+  </body>
+</html>
